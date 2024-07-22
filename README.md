@@ -2,7 +2,7 @@
 Demo project to integrate Flutter on iOS and Android via “add-to-app”
 
 # Android Build and Run
-1. counter_module에서 aar 빌드
+1. counter_module build to aar
 ```
 ~counter_module % fvm flutter pub get
 Resolving dependencies... 
