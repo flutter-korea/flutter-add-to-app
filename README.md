@@ -1,7 +1,7 @@
 # flutter-add-to-app
 Demo project to integrate Flutter on iOS and Android via “add-to-app”
 
-# Android 실행
+# Android 빌드 및 실행
 1. counter_module에서 aar 빌드
 ```
 ~counter_module % fvm flutter pub get
@@ -64,3 +64,27 @@ Consuming the Module
 To learn more, visit https://flutter.dev/go/build-aar
 ```
 2. counter_android에서 안드로이드 실행
+
+# iOS 빌드 및 실행
+1. counter_ios 디렉토리로 이동 후 pod install
+```
+~counter_ios % pod install
+Analyzing dependencies
+Downloading dependencies
+Installing Flutter (1.0.0)
+Installing FlutterPluginRegistrant (0.0.1)
+Generating Pods project
+Integrating client project
+
+[!] Please close any current Xcode sessions and use `counter_ios.xcworkspace` for this project from now on.
+Pod installation complete! There are 2 dependencies from the Podfile and 2 total pods installed.
+~counter_ios % ls -ll
+total 16
+-rw-r--r--  1 cody  staff  516  7 22 13:44 Podfile
+-rw-r--r--  1 cody  staff  621  7 22 13:46 Podfile.lock
+drwxr-xr-x  7 cody  staff  224  7 22 13:46 Pods
+drwxr-xr-x  6 cody  staff  192  7 22 13:46 counter_ios
+drwxr-xr-x  5 cody  staff  160  7 22 13:46 counter_ios.xcodeproj
+drwxr-xr-x  3 cody  staff   96  7 22 13:46 counter_ios.xcworkspace
+```
+2. counter_ios.xcworkspace 파일을 열고, 빌드 및 실행
