@@ -1,7 +1,7 @@
 # flutter-add-to-app
 Demo project to integrate Flutter on iOS and Android via “add-to-app”
 
-# Android 빌드 및 실행
+# Android Build and Run
 1. counter_module에서 aar 빌드
 ```
 ~counter_module % fvm flutter pub get
@@ -63,10 +63,10 @@ Consuming the Module
 
 To learn more, visit https://flutter.dev/go/build-aar
 ```
-2. counter_android에서 안드로이드 실행
+2. open counter_android in Android Studio and build and run
 
-# iOS 빌드 및 실행
-1. counter_ios 디렉토리로 이동 후 pod install
+# iOS Build and Run
+1. move to counter_ios directory and run pod install on shell
 ```
 ~counter_ios % pod install
 Analyzing dependencies
@@ -87,4 +87,4 @@ drwxr-xr-x  6 cody  staff  192  7 22 13:46 counter_ios
 drwxr-xr-x  5 cody  staff  160  7 22 13:46 counter_ios.xcodeproj
 drwxr-xr-x  3 cody  staff   96  7 22 13:46 counter_ios.xcworkspace
 ```
-2. counter_ios.xcworkspace 파일을 열고, 빌드 및 실행
+2. open counter_ios.xcworkspace and build and run
